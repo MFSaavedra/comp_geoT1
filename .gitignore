@@ -1,0 +1,41 @@
+# Compilados / binarios
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.exe
+*.out
+build/
+bin/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# LaTeX
+*.aux
+*.log
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.out
+
+# Editores / sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Datos pesados
+*.pdf
