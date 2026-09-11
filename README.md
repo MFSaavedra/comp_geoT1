@@ -95,3 +95,7 @@ genera la documentación en `docs/html/index.html`.
 - `esCCW`, `hacerCCW` y `area` se apoyan en la misma área con signo (fórmula
   del shoelace): el signo da la orientación, invertir los puntos la cambia y
   el valor absoluto es el área.
+
+## Declaración de uso de IA
+
+Se utilizó Claude Opus 5 para corregir y complementar el código, para discutir conceptos e ideas de diseño y generar la documentación.
