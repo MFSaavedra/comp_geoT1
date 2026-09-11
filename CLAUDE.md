@@ -14,7 +14,7 @@ Course material and the assignment are in Spanish; code identifiers, comments, a
 
 ## Current state
 
-All three classes are implemented in `include/` (`Punto.hpp`, `Vector.hpp`, `Poligono.hpp`). There is no `src/main.cpp` and no `test/*.cpp` yet, so **no test has been written and nothing is graded yet** (see the grading rule below).
+All three classes are implemented in `include/` (`Punto.hpp`, `Vector.hpp`, `Poligono.hpp`), with one Google Test file per class in `test/` and the demo `src/main.cpp`. Every public method has a test.
 
 `Doxyfile` builds the API docs into `docs/html/`; that output is meant to be committed (generated on a machine with Doxygen), so do not add it to `.gitignore`.
 
