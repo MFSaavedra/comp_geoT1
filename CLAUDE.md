@@ -16,7 +16,7 @@ Course material and the assignment are in Spanish; code identifiers, comments, a
 
 All three classes are implemented in `include/` (`Punto.hpp`, `Vector.hpp`, `Poligono.hpp`). There is no `src/main.cpp` and no `test/*.cpp` yet, so **no test has been written and nothing is graded yet** (see the grading rule below).
 
-`data/.gitkeep` and `docs/.gitkeep` are pending deletions in `git status`; the README still documents `data/` and `docs/` in its structure block and mentions neither `include/` nor `test/`, so that block is stale either way.
+`Doxyfile` builds the API docs into `docs/html/`; that output is meant to be committed (generated on a machine with Doxygen), so do not add it to `.gitignore`.
 
 ## Build and test
 
@@ -70,6 +70,6 @@ The spec (`comp_geoT1/Tarea1_GeometrA_a.pdf`) is the source of truth for the req
 
 - **Untested methods are not graded, and a submission with no tests at all receives the minimum grade.** Every public method needs a test; treat adding a method and adding its test as one unit of work. `cassert` or Google Test only — no other third-party libraries.
 - A small `main` must instantiate all three classes and exercise the implemented methods.
-- The README must explain how to run the assignment; it is currently a stub reading "_Por definir._" and must end up documenting the CMake commands above. The assignment permits a makefile and says CMake is not required — it does not forbid it, but the graders will follow whatever the README says, so the README is the binding artifact.
+- The README must explain how to run the assignment. It documents the CMake commands above, a no-CMake `g++` fallback, and `doxygen`. The assignment permits a makefile and says CMake is not required — it does not forbid it, but the graders will follow whatever the README says, so the README is the binding artifact.
 
 `.gitignore` excludes `*.pdf`, so the assignment spec, and any compiled LaTeX report, are untracked by design — don't "fix" this by force-adding them. It ignores `build/` (so out-of-source CMake output is covered, but an in-source configure would leave `CMakeCache.txt` and `CMakeFiles/` untracked), and `*.out` (intended for LaTeX) silently covers `a.out`-style binaries too.
