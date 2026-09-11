@@ -17,9 +17,9 @@
  */
 template <typename T> class Punto {
 private:
-  T x;
-  T y;
-  T z;
+  T x; ///< Coordenada x.
+  T y; ///< Coordenada y.
+  T z; ///< Coordenada z auxiliar; recibe el resultado de productoCruz.
 
   /**
    * @brief Igualdad tolerante en punto flotante, exacta en enteros.

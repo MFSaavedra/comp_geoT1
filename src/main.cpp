@@ -9,6 +9,10 @@
 #include "Punto.hpp"
 #include "Vector.hpp"
 
+/**
+ * @brief Instancia las tres clases y ejercita sus metodos.
+ * @return 0 al terminar.
+ */
 int main() {
   std::cout << std::boolalpha;
 

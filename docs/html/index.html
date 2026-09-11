@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.18.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>comp_geoT1: comp_geoT1</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="codefolding.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">comp_geoT1
+   </div>
+   <div id="projectbrief">Tarea 1 - CC5502 Geometría Computacional</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.18.0 -->
+<script type="text/javascript">
+let searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Buscar" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded',() => { initNavTree('index.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">comp_geoT1 </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a></p>
+<p>Tarea 1 del curso CC5502 Geometría Computacional (DCC): las clases <span class="tt"><a class="el" href="classPunto.html" title="Punto en el plano, con una coordenada z auxiliar.">Punto</a></span>, <span class="tt"><a class="el" href="classVector.html" title="Vector en el plano, guardado como el Punto que va del origen a su extremo.">Vector</a></span> y <span class="tt"><a class="el" href="classPoligono.html" title="Poligono en el plano, dado por sus vertices en orden.">Poligono</a></span> con templates, sus tests y un <span class="tt"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Instancia las tres clases y ejercita sus metodos.">main</a></span> de ejemplo.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md1"></a>
+Estructura</h1>
+<div class="fragment"><div class="line">.</div>
+<div class="line">├── CMakeLists.txt</div>
+<div class="line">├── Doxyfile</div>
+<div class="line">├── docs/html/             # documentación generada con Doxygen</div>
+<div class="line">├── include/</div>
+<div class="line">│   ├── Punto.hpp          # Punto&lt;T&gt;</div>
+<div class="line">│   ├── Vector.hpp         # Vector&lt;T&gt;, compone un Punto&lt;T&gt;</div>
+<div class="line">│   └── Poligono.hpp       # Poligono&lt;T&gt;, guarda un std::vector&lt;Punto&lt;T&gt;&gt;</div>
+<div class="line">├── src/</div>
+<div class="line">│   └── main.cpp           # instancia las tres clases y usa sus métodos</div>
+<div class="line">└── test/</div>
+<div class="line">    ├── Punto_test.cpp     # un TEST de Google Test por método público</div>
+<div class="line">    ├── Vector_test.cpp</div>
+<div class="line">    └── Poligono_test.cpp</div>
+</div><!-- fragment --><p>Como las clases son templates, todo su código vive en los headers de <span class="tt">include/</span>; <span class="tt">src/</span> solo contiene el <span class="tt"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Instancia las tres clases y ejercita sus metodos.">main</a></span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+Requisitos</h1>
+<ul>
+<li>CMake ≥ 3.14 y un compilador con soporte de C++17 (<span class="tt">g++</span> o <span class="tt">clang++</span>).</li>
+<li>Google Test, opcional: si está instalado (<span class="tt">libgtest-dev</span> en Debian/Ubuntu, <span class="tt">gtest</span> en Arch) se usa; si no, CMake lo descarga de GitHub al configurar por primera vez.</li>
+</ul>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md3"></a>
+Compilar</h1>
+<p>Desde la raíz del repositorio:</p>
+<div class="fragment"><div class="line">cmake -S . -B build</div>
+<div class="line">cmake --build build</div>
+</div><!-- fragment --><p>Esto genera <span class="tt">build/main</span> y <span class="tt">build/geo_tests</span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+Ejecutar los tests</h1>
+<div class="fragment"><div class="line">cd build &amp;&amp; ctest --output-on-failure</div>
+</div><!-- fragment --><p><span class="tt">ctest</span> lista cada caso (<span class="tt">Punto.Distancia</span>, <span class="tt">Poligono.Area</span>, ...) con su resultado. Para ver la salida completa de Google Test, ejecutar el binario directamente:</p>
+<div class="fragment"><div class="line">./build/geo_tests</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md5"></a>
+Ejecutar el main</h1>
+<div class="fragment"><div class="line">./build/main</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+Sin CMake</h1>
+<p>Con Google Test instalado en el sistema:</p>
+<div class="fragment"><div class="line">g++ -std=c++17 -Iinclude src/main.cpp -o main &amp;&amp; ./main</div>
+<div class="line">g++ -std=c++17 -Iinclude test/*.cpp -lgtest -lgtest_main -pthread -o geo_tests &amp;&amp; ./geo_tests</div>
+</div><!-- fragment --><h1 class="doxsection"><a class="anchor" id="autotoc_md7"></a>
+Documentación</h1>
+<p>Los headers están comentados con Doxygen. Con <span class="tt">doxygen</span> instalado, desde la raíz del repositorio:</p>
+<div class="fragment"><div class="line">doxygen</div>
+</div><!-- fragment --><p>genera la documentación en <span class="tt">docs/html/index.html</span>.</p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md8"></a>
+Notas de diseño</h1>
+<ul>
+<li><span class="tt"><a class="el" href="classPunto.html" title="Punto en el plano, con una coordenada z auxiliar.">Punto</a>&lt;T&gt;</span> guarda una coordenada <span class="tt">z</span> (0 al construir con dos valores) para que <span class="tt"><a class="el" href="classVector.html" title="Vector en el plano, guardado como el Punto que va del origen a su extremo.">Vector</a>&lt;T&gt;::productoCruz</span> pueda retornar un vector, como pide el enunciado: el producto cruz de dos vectores 2D es un escalar sobre el eje z. <span class="tt">operator&lt;&lt;</span> imprime solo <span class="tt">(x,y)</span>.</li>
+<li><span class="tt">distancia</span>, <span class="tt">magnitud</span> y <span class="tt">area</span> retornan <span class="tt">double</span> aunque <span class="tt">T</span> sea entero, y promueven a <span class="tt">double</span> antes de operar para no truncar ni desbordar.</li>
+<li><span class="tt">operator==</span> es exacto con tipos enteros y tolerante con punto flotante.</li>
+<li><span class="tt">esCCW</span>, <span class="tt">hacerCCW</span> y <span class="tt">area</span> se apoyan en la misma área con signo (fórmula del shoelace): el signo da la orientación, invertir los puntos la cambia y el valor absoluto es el área. </li>
+</ul>
+</div></div><!-- PageDoc -->
+<a href="doxygen_crawl.html"></a>
+</div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
+  </ul>
+</div>
+</body>
+</html>

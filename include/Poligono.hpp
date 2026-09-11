@@ -19,7 +19,7 @@
  */
 template <typename T> class Poligono {
 private:
-  std::vector<Punto<T>> puntos;
+  std::vector<Punto<T>> puntos; ///< Vertices en el orden dado.
 
   /**
    * @brief Area con signo segun la formula del shoelace.

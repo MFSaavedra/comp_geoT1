@@ -18,7 +18,7 @@
  */
 template <typename T> class Vector {
 private:
-  Punto<T> p;
+  Punto<T> p; ///< Componentes del vector, almacenadas como un Punto.
 
 public:
   /**
