@@ -14,7 +14,7 @@ Course material and the assignment are in Spanish; code identifiers, comments, a
 
 ## Current state
 
-`Punto<T>` (`include/Punto.hpp`) and `Vector<T>` (`include/Vector.hpp`) are implemented. `Poligono.hpp` exists but is an **empty file**. There is no `src/main.cpp` and no `test/*.cpp` yet, so **no test has been written and nothing is graded yet** (see the grading rule below).
+All three classes are implemented in `include/` (`Punto.hpp`, `Vector.hpp`, `Poligono.hpp`). There is no `src/main.cpp` and no `test/*.cpp` yet, so **no test has been written and nothing is graded yet** (see the grading rule below).
 
 `data/.gitkeep` and `docs/.gitkeep` are pending deletions in `git status`; the README still documents `data/` and `docs/` in its structure block and mentions neither `include/` nor `test/`, so that block is stale either way.
 
@@ -49,7 +49,7 @@ Three templated value types in `include/`, layered: `Punto<T>` is the primitive,
 
 **Why `Punto<T>` carries a `z`.** The spec gives `Punto` three private coordinates `x, y, z` while its constructor takes only two `T` values and `operator<<` prints `(x,y)`. That third coordinate exists to receive `Vector::productoCruz`: the cross product of two 2D vectors is a scalar living on the z axis, but the spec requires it to return *a new vector*. `Punto` already provides the three-argument constructor and `getZ()` for exactly this; the 2D printing contract stays intact.
 
-**One primitive drives all of `Poligono`.** `esCCW()`, the CW→CCW conversion, and `area()` are three consumers of the same signed shoelace sum: sign answers orientation, reversing the point order flips it, absolute value halved gives the area. Implement the signed sum once and express all three in terms of it instead of writing three independent loops.
+**One primitive drives all of `Poligono`.** `esCCW()`, `hacerCCW()`, and `area()` are three consumers of the private `areaConSigno()` (the signed shoelace sum, halved): sign answers orientation, reversing the point order flips it, absolute value gives the area. Keep it that way — do not add a second loop over the vertices for a new orientation or area query.
 
 ### Conventions `Punto<T>` established — match them in `Vector` and `Poligono`
 
