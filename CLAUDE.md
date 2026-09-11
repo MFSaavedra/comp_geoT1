@@ -14,7 +14,7 @@ Course material and the assignment are in Spanish; code identifiers, comments, a
 
 ## Current state
 
-`Punto<T>` is implemented (`include/Punto.hpp`). `Vector.hpp` and `Poligono.hpp` exist but are **empty files**. `src/` holds only `.gitkeep` — there is no `main.cpp` yet — and `test/` is an empty directory, so **no test has been written and nothing is graded yet** (see the grading rule below).
+`Punto<T>` (`include/Punto.hpp`) and `Vector<T>` (`include/Vector.hpp`) are implemented. `Poligono.hpp` exists but is an **empty file**. There is no `src/main.cpp` and no `test/*.cpp` yet, so **no test has been written and nothing is graded yet** (see the grading rule below).
 
 `data/.gitkeep` and `docs/.gitkeep` are pending deletions in `git status`; the README still documents `data/` and `docs/` in its structure block and mentions neither `include/` nor `test/`, so that block is stale either way.
 
@@ -47,7 +47,7 @@ Three templated value types in `include/`, layered: `Punto<T>` is the primitive,
 
 **Templates force a header-only design.** Every method body must live in the `.hpp` (or be explicitly instantiated), so `src/` should contain only `main.cpp` — do not create `Punto.cpp` / `Vector.cpp` / `Poligono.cpp` expecting them to link. A split build compiles cleanly and fails at link with `undefined reference`, because the definition TU emits no symbols for a template it was never told to instantiate.
 
-**Why `Punto<T>` carries a `z`.** The spec gives `Punto` three private coordinates `x, y, z` while its constructor takes only two `T` values and `operator<<` prints `(x,y)`. That third coordinate exists to receive `Vector::cross`: the cross product of two 2D vectors is a scalar living on the z axis, but the spec requires `cross` to return *a new vector*. `Punto` already provides the three-argument constructor and `getZ()` for exactly this; the 2D printing contract stays intact.
+**Why `Punto<T>` carries a `z`.** The spec gives `Punto` three private coordinates `x, y, z` while its constructor takes only two `T` values and `operator<<` prints `(x,y)`. That third coordinate exists to receive `Vector::productoCruz`: the cross product of two 2D vectors is a scalar living on the z axis, but the spec requires it to return *a new vector*. `Punto` already provides the three-argument constructor and `getZ()` for exactly this; the 2D printing contract stays intact.
 
 **One primitive drives all of `Poligono`.** `esCCW()`, the CW→CCW conversion, and `area()` are three consumers of the same signed shoelace sum: sign answers orientation, reversing the point order flips it, absolute value halved gives the area. Implement the signed sum once and express all three in terms of it instead of writing three independent loops.
 
